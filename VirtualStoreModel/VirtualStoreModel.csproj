@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F97584A1-B43E-45E9-911D-E42ECA54639E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pisa.VirtualStore</RootNamespace>
+    <AssemblyName>Pisa.VirtualStore.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Models\Archived\ArchivedCalculusAppliedOffer.cs" />
+    <Compile Include="Models\Archived\ArchivedCalculusBasketDetail.cs" />
+    <Compile Include="Models\Archived\ArchivedCalculusFreeProduct.cs" />
+    <Compile Include="Models\Archived\ArchivedCalculusOrder.cs" />
+    <Compile Include="Models\Archived\ArchivedCalculusServiceCost.cs" />
+    <Compile Include="Models\Audit\AuditAuthor.cs" />
+    <Compile Include="Models\Base\BaseAuditableModel.cs" />
+    <Compile Include="Models\Base\BaseModel.cs" />
+    <Compile Include="Models\Base\IBaseAuditableModel.cs" />
+    <Compile Include="Models\Base\IBaseModel.cs" />
+    <Compile Include="Models\Calculus\CalculusAppliedOffer.cs" />
+    <Compile Include="Models\Calculus\CalculusBasketDetail.cs" />
+    <Compile Include="Models\Calculus\CalculusFreeProduct.cs" />
+    <Compile Include="Models\Calculus\CalculusOrder.cs" />
+    <Compile Include="Models\Calculus\CalculusServiceCost.cs" />
+    <Compile Include="Models\Client\ClientBasket.cs" />
+    <Compile Include="Models\Client\ClientBasketDetail.cs" />
+    <Compile Include="Models\Client\ClientFeedback.cs" />
+    <Compile Include="Models\Contact\Contact.cs" />
+    <Compile Include="Models\Contact\ContactAddress.cs" />
+    <Compile Include="Models\Contact\ContactRegion.cs" />
+    <Compile Include="Models\Contact\ContactType.cs" />
+    <Compile Include="Models\General\GeneralMedia.cs" />
+    <Compile Include="Models\General\GeneralSchedule.cs" />
+    <Compile Include="Models\General\GeneralStatus.cs" />
+    <Compile Include="Models\ModelRegistry.cs" />
+    <Compile Include="Models\Offer\Offer.cs" />
+    <Compile Include="Models\Offer\OffersDetail.cs" />
+    <Compile Include="Models\Order\Order.cs" />
+    <Compile Include="Models\Order\OrderSchedule.cs" />
+    <Compile Include="Models\Order\OrderScheduleControl.cs" />
+    <Compile Include="Models\Product\Product.cs" />
+    <Compile Include="Models\Product\ProductBrand.cs" />
+    <Compile Include="Models\Product\ProductType.cs" />
+    <Compile Include="Models\Product\ProductUnitOfMeasure.cs" />
+    <Compile Include="Models\Security\SecurityAccount.cs" />
+    <Compile Include="Models\Security\SecurityAccountAddress.cs" />
+    <Compile Include="Models\Security\SecurityAccountContact.cs" />
+    <Compile Include="Models\Security\SecurityAccountStore.cs" />
+    <Compile Include="Models\Security\SecurityAccountUser.cs" />
+    <Compile Include="Models\Security\SecurityAction.cs" />
+    <Compile Include="Models\Security\SecurityDefaultProfile.cs" />
+    <Compile Include="Models\Security\SecurityPassword.cs" />
+    <Compile Include="Models\Security\SecurityPerson.cs" />
+    <Compile Include="Models\Security\SecurityProfile.cs" />
+    <Compile Include="Models\Security\SecurityProfileAction.cs" />
+    <Compile Include="Models\Security\SecurityUser.cs" />
+    <Compile Include="Models\Service\ServiceByStore.cs" />
+    <Compile Include="Models\Service\ServiceRule.cs" />
+    <Compile Include="Models\Service\ServiceType.cs" />
+    <Compile Include="Models\Service\ServiceZone.cs" />
+    <Compile Include="Models\Store\Store.cs" />
+    <Compile Include="Models\Store\StoreAddress.cs" />
+    <Compile Include="Models\Store\StoreContact.cs" />
+    <Compile Include="Models\Store\StoreProduct.cs" />
+    <Compile Include="Models\Store\StoreZone.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Models\Security\Security_ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
