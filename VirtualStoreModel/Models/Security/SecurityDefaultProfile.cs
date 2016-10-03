@@ -13,9 +13,9 @@ namespace Pisa.VirtualStore.Models.Security
     public partial class SecurityDefaultProfile : BaseAuditableModel
     {
         /*[DatabaseGenerated(DatabaseGeneratedOption.None)]*/
-        public int IdSecurityProfileType { get; set; }
+        public int SecurityProfileTypeId { get; set; }
 
-        public int IdSecurityProfile { get; set; }
+        public int SecurityProfileId { get; set; }
 
         public virtual SecurityProfileType SecurityProfileType { get; set; }
 

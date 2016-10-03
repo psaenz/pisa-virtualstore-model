@@ -9,7 +9,7 @@ namespace Pisa.VirtualStore.Models.Contact
 
     public partial class ContactAddress : BaseAuditableModel
     {
-        public int IdContactRegion { get; set; }
+        public int ContactRegionId { get; set; }
 
         public string Details { get; set; }
 

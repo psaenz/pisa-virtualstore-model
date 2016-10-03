@@ -10,19 +10,13 @@ namespace Pisa.VirtualStore.Models.Offer
 
     public partial class Offer : BaseAuditableModel
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Offer()
-        {
-            OfferDetails = new HashSet<OffersDetail>();
-        }
+        public int StoreId { get; set; }
 
-        public int IdStore { get; set; }
+        public int GeneralStatusId { get; set; }
 
-        public int IdStatus { get; set; }
+        public int GeneralMediaId { get; set; }
 
-        public int IdGeneralMedia { get; set; }
-
-        public int IdGeneralSchedule { get; set; }
+        public int GeneralScheduleId { get; set; }
 
         public string Name { get; set; }
 
@@ -35,8 +29,5 @@ namespace Pisa.VirtualStore.Models.Offer
         public virtual GeneralMedia GeneralMedia { get; set; }
 
         public virtual GeneralSchedule GeneralSchedule { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<OffersDetail> OfferDetails { get; set; }
     }
 }

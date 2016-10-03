@@ -24,7 +24,7 @@ namespace Pisa.VirtualStore.Models.General
          * - StartDate = 20/08/2016
          */
 
-        public int IdGeneralStatus { get; set; }
+        public int GeneralStatusId { get; set; }
 
         public string Frequency { get; set; } // i.e: Daily, Weekly, Monthly, working days, Weekends, Specific Weekday
 

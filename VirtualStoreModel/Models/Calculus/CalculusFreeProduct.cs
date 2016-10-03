@@ -7,9 +7,9 @@ namespace Pisa.VirtualStore.Models.Calculus
 
     public partial class CalculusFreeProduct : BaseModel
     {
-        public int IdCalculusOrder { get; set; }
+        public int CalculusOrderId { get; set; }
 
-        public int IdProduct { get; set; }
+        public int ProductId { get; set; }
 
         public int Quantity { get; set; }
 

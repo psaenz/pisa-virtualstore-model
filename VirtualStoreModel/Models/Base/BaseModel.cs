@@ -26,12 +26,12 @@ namespace Pisa.VirtualStore.Models.Base
     {
         public int Id { get; set; }
 
-        public T getPropertyValue<T>(string propertyName)
+        public object GetPropertyValue(string propertyName)
         {
-            return (T) this.GetType().GetProperty(propertyName).GetValue(this);
+            return this.GetType().GetProperty(propertyName).GetValue(this);
         }
 
-        public void setPropertyValue<T>(string propertyName, T value)
+        public void SetPropertyValue(string propertyName, object value)
         {
             this.GetType().GetProperty(propertyName).SetValue(this, value);
         }

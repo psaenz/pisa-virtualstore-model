@@ -5,7 +5,7 @@ namespace Pisa.VirtualStore.Models.Security
     using Pisa.VirtualStore.Models.Base;
     public partial class SecurityPassword : BaseAuditableModel
     {
-        public int IdSecurityUser { get; set; }
+        public int SecurityUserId { get; set; }
 
         public int Sequence { get; set; }
 

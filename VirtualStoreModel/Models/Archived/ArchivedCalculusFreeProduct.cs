@@ -7,9 +7,9 @@ namespace Pisa.VirtualStore.Models.Archived
 
     public partial class ArchivedCalculusFreeProduct : BaseModel
     {
-        public int IdArchivedCalculusOrder { get; set; }
+        public int ArchivedCalculusOrderId { get; set; }
 
-        public int IdProduct { get; set; }
+        public int ProductId { get; set; }
 
         public int Quantity { get; set; }
 

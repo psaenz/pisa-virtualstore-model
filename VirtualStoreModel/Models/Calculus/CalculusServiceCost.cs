@@ -9,9 +9,9 @@ namespace Pisa.VirtualStore.Models.Calculus
 
     public partial class CalculusServiceCost :BaseModel
     {
-        public int IdCalculusOrder { get; set; }
+        public int CalculusOrderId { get; set; }
 
-        public int IdServiceType { get; set; }
+        public int ServiceTypeId { get; set; }
 
         public double ServiceCost { get; set; }
 

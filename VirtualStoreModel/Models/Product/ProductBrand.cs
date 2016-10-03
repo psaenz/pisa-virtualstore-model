@@ -9,7 +9,7 @@ namespace Pisa.VirtualStore.Models.Product
     {
         public string Name { get; set; }
 
-        public int IdGeneralStatus { get; set; }
+        public int GeneralStatusId { get; set; }
 
         public virtual GeneralStatus GeneralStatus { get; set; }
     }

@@ -7,11 +7,11 @@ namespace Pisa.VirtualStore.Models.Calculus
 
     public partial class CalculusBasketDetail : BaseModel
     {
-        public int IdCalculusOrder { get; set; }
+        public int CalculusOrderId { get; set; }
 
-        public int IdBasketDetail { get; set; }
+        public int ClientBasketDetailId { get; set; }
 
-        public int IdAppliedOffer { get; set; }
+        public int CalculusAppliedOfferId { get; set; }
 
         public int CountWithOffer { get; set; }
 
@@ -23,9 +23,9 @@ namespace Pisa.VirtualStore.Models.Calculus
 
         public bool ProvidedByStore { get; set; }
 
-        public virtual ClientBasketDetail BasketDetail { get; set; }
-
         public virtual CalculusOrder CalculusOrder { get; set; }
+
+        public virtual ClientBasketDetail ClientBasketDetail { get; set; }
 
         public virtual CalculusAppliedOffer CalculusAppliedOffer { get; set; }
     }

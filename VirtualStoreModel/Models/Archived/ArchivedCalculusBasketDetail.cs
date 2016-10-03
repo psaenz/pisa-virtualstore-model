@@ -5,11 +5,11 @@ namespace Pisa.VirtualStore.Models.Archived
 
     public partial class ArchivedCalculusBasketDetail : BaseModel
     {
-        public int IdCalculusOrder { get; set; }
+        public int CalculusOrderId { get; set; }
 
-        public int IdBasketDetail { get; set; }
+        public int ClientBasketDetailId { get; set; }
 
-        public int? IdAppliedOffer { get; set; }
+        public int CalculusAppliedOfferId { get; set; }
 
         public int CountWithOffer { get; set; }
 
@@ -21,9 +21,9 @@ namespace Pisa.VirtualStore.Models.Archived
 
         public bool ProvidedByStore { get; set; }
 
-        public virtual ArchivedCalculusOrder ArchivedCalculusOrder { get; set; }
+        public virtual ArchivedCalculusOrder CalculusOrder { get; set; }
 
-        public virtual ArchivedCalculusAppliedOffer ArchivedCalculusAppliedOffer { get; set; }
+        public virtual ArchivedCalculusAppliedOffer CalculusAppliedOffer { get; set; }
 
         public virtual ClientBasketDetail ClientBasketDetail { get; set; }
     }

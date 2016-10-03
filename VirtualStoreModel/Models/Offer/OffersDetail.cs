@@ -7,9 +7,9 @@ namespace Pisa.VirtualStore.Models.Offer
 
     public partial class OffersDetail : BaseAuditableModel
     {
-        public int IdOffer { get; set; }
+        public int OfferId { get; set; }
 
-        public int IdProduct { get; set; }
+        public int ProductId { get; set; }
 
         public int Quantity { get; set; }
 

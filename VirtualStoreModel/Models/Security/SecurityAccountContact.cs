@@ -17,9 +17,9 @@ namespace Pisa.VirtualStore.Models.Security
 
     public partial class SecurityAccountContact : BaseAuditableModel
     {
-        public int IdContact { get; set; }
+        public int ContactId { get; set; }
 
-        public int IdSecurityAccount { get; set; }
+        public int SecurityAccountId { get; set; }
 
         public virtual Contact Contact { get; set; }
 

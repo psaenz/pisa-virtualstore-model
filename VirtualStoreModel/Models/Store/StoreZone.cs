@@ -10,9 +10,9 @@ namespace Pisa.VirtualStore.Models.Store
 
     public partial class StoreZone : BaseAuditableModel
     {
-        public int? IdContactRegion { get; set; }
+        public int ContactRegionId { get; set; }
 
-        public int IdServiceZone { get; set; }
+        public int ServiceZoneId { get; set; }
 
         public virtual ContactRegion ContactRegion { get; set; }
 

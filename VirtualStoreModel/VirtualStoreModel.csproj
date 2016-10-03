@@ -84,6 +84,7 @@
     <Compile Include="Models\Security\SecurityDefaultProfile.cs" />
     <Compile Include="Models\Security\SecurityPassword.cs" />
     <Compile Include="Models\Security\SecurityPerson.cs" />
+    <Compile Include="Models\Security\SecurityProfileType.cs" />
     <Compile Include="Models\Security\SecurityProfile.cs" />
     <Compile Include="Models\Security\SecurityProfileAction.cs" />
     <Compile Include="Models\Security\SecurityUser.cs" />
@@ -100,6 +101,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Models\Security\Security_ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\pisa-utils\PisaUtils\PisaUtils.csproj">
+      <Project>{5712dfab-386a-482d-9d4e-f736940e6385}</Project>
+      <Name>PisaUtils</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

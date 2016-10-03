@@ -6,9 +6,9 @@ namespace Pisa.VirtualStore.Models.Service
 
     public partial class ServiceRule : BaseAuditableModel
     {
-        public int IdServiceByStore { get; set; }
+        public int ServiceByStoreId { get; set; }
 
-        public int IdServiceZone { get; set; }
+        public int ServiceZoneId { get; set; }
 
         public double ShoppingAmount { get; set; }
 

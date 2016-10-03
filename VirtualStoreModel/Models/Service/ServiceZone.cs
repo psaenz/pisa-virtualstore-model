@@ -7,7 +7,7 @@ namespace Pisa.VirtualStore.Models.Service
 
     public partial class ServiceZone : BaseAuditableModel
     {
-        public int IdStore { get; set; }
+        public int StoreId { get; set; }
 
         public string Name { get; set; }
 

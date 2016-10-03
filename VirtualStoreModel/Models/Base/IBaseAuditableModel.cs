@@ -27,8 +27,8 @@ namespace Pisa.VirtualStore.Models.Base
 
         DateTime UpdatedOn { get; set; }
 
-        int IdAddedBy { get; set; }
+        int AddedById { get; set; }
 
-        int IdUpdatedBy { get; set; }
+        int UpdatedById { get; set; }
     }
 }

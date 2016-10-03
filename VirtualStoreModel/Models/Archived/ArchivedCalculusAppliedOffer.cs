@@ -16,20 +16,11 @@ namespace Pisa.VirtualStore.Models.Archived
 
     public partial class ArchivedCalculusAppliedOffer : BaseModel
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public ArchivedCalculusAppliedOffer()
-        {
-            ArchivedCalculusBasketDetails = new HashSet<ArchivedCalculusBasketDetail>();
-        }
+        public int ArchivedCalculusOrderId { get; set; }
 
-        public int IdCalculusOrder { get; set; }
-
-        public int IdOffer { get; set; }
+        public int OfferId { get; set; }
 
         public int NumberApplied { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ArchivedCalculusBasketDetail> ArchivedCalculusBasketDetails { get; set; }
 
         public virtual ArchivedCalculusOrder ArchivedCalculusOrder { get; set; }
 

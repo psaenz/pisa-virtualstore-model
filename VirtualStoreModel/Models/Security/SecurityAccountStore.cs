@@ -22,9 +22,9 @@ namespace Pisa.VirtualStore.Models.Security
     /// </summary>
     public partial class SecurityAccountStore : BaseAuditableModel
     {
-        public int IdSecurityAccount { get; set; }
+        public int SecurityAccountId { get; set; }
 
-        public int IdStore { get; set; }
+        public int StoreId { get; set; }
 
         public virtual SecurityAccount SecurityAccount { get; set; }
 

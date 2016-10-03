@@ -11,11 +11,11 @@ namespace Pisa.VirtualStore.Models.Product
 
         public string Description { get; set; }
 
-        public int IdProductBrand { get; set; }
+        public int ProductBrandId { get; set; }
 
-        public int IdProductUnitOfMeasure { get; set; }
+        public int ProductUnitOfMeasureId { get; set; }
 
-        public int IdGeneralMedia { get; set; }
+        public int GeneralMediaId { get; set; }
 
         public virtual ProductBrand ProductBrand { get; set; }
 

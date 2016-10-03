@@ -8,9 +8,9 @@ namespace Pisa.VirtualStore.Models.Client
 
     public partial class ClientFeedback : BaseModel
     {
-        public int IdSecurityUser { get; set; }
+        public int SecurityUserId { get; set; }
 
-        public int IdStore { get; set; }
+        public int StoreId { get; set; }
 
         public DateTime FeedbackDate { get; set; }
 

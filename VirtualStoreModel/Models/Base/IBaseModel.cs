@@ -4,6 +4,6 @@
     {
         int Id { get; set; }
 
-        void setPropertyValue<T>(string propertyName, T value);
+        void SetPropertyValue(string propertyName, object value);
     }
 }

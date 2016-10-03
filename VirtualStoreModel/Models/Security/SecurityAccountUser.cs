@@ -6,11 +6,11 @@ namespace Pisa.VirtualStore.Models.Security
 
     public partial class SecurityAccountUser : BaseAuditableModel
     {
-        public int IdSecurityAccount { get; set; }
+        public int SecurityAccountId { get; set; }
 
-        public int IdSecurityUser { get; set; }
+        public int SecurityUserId { get; set; }
 
-        public int IdSecurityProfile { get; set; }
+        public int SecurityProfileId { get; set; }
 
         public SecurityAccount SecurityAccount { get; set; }
 

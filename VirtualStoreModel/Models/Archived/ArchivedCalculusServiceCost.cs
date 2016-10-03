@@ -5,13 +5,13 @@ namespace Pisa.VirtualStore.Models.Archived
 
     public partial class ArchivedCalculusServiceCost : BaseModel
     {
-        public int IdCalculusOrder { get; set; }
+        public int CalculusOrderId { get; set; }
 
-        public int IdServiceType { get; set; }
+        public int ServiceTypeId { get; set; }
 
         public double ServiceCost { get; set; }
 
-        public virtual ArchivedCalculusOrder ArchivedCalculusOrder { get; set; }
+        public virtual ArchivedCalculusOrder CalculusOrder { get; set; }
 
         public virtual ServiceType ServiceType { get; set; }
     }

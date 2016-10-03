@@ -17,11 +17,11 @@ namespace Pisa.VirtualStore.Models.Service
 
     public partial class ServiceByStore : BaseAuditableModel
     {
-        public int IdStore { get; set; }
+        public int StoreId { get; set; }
 
-        public int IdServiceType { get; set; }
+        public int ServiceTypeId { get; set; }
 
-        public int IdGeneralStatus { get; set; }
+        public int GeneralStatusId { get; set; }
 
         public virtual Store Store { get; set; }
 

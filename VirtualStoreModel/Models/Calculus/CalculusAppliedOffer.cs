@@ -7,23 +7,14 @@ namespace Pisa.VirtualStore.Models.Calculus
 
     public partial class CalculusAppliedOffer : BaseModel
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public CalculusAppliedOffer()
-        {
-            CalculusBasketDetails = new HashSet<CalculusBasketDetail>();
-        }
+        public int CalculusOrderId { get; set; }
 
-        public int IdCalculusOrder { get; set; }
-
-        public int IdOffer { get; set; }
+        public int OfferId { get; set; }
 
         public int NumberApplied { get; set; }
 
         public virtual CalculusOrder CalculusOrder { get; set; }
 
         public virtual Offer Offer { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<CalculusBasketDetail> CalculusBasketDetails { get; set; }
     }
 }

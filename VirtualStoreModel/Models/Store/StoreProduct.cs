@@ -7,9 +7,9 @@ namespace Pisa.VirtualStore.Models.Store
 
     public partial class StoreProduct : BaseAuditableModel
     {
-        public int IdStore { get; set; }
+        public int StoreId { get; set; }
 
-        public int IdProduct { get; set; }
+        public int ProductId { get; set; }
 
         public string ProductCode { get; set; }
 

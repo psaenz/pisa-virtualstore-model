@@ -7,9 +7,9 @@ namespace Pisa.VirtualStore.Models.Store
 
     public partial class StoreAddress : BaseAuditableModel
     {
-        public int IdContactAddress { get; set; }
+        public int ContactAddressId { get; set; }
 
-        public int IdStore { get; set; }
+        public int StoreId { get; set; }
 
         public virtual ContactAddress ContactAddress { get; set; }
 

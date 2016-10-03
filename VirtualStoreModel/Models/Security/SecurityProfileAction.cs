@@ -5,9 +5,9 @@ namespace Pisa.VirtualStore.Models.Security
     using Pisa.VirtualStore.Models.Base;
     public partial class SecurityProfileAction : BaseAuditableModel
     {
-        public int IdSecurityProfile { get; set; }
+        public int SecurityProfileId { get; set; }
 
-        public int IdSecurityAction { get; set; }
+        public int SecurityActionId { get; set; }
 
         public bool Available { get; set; }
 

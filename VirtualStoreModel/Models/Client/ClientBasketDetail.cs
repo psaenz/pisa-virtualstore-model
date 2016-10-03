@@ -7,9 +7,9 @@ namespace Pisa.VirtualStore.Models.Client
 
     public partial class ClientBasketDetail : BaseAuditableModel
     {
-        public int IdBasket { get; set; }
+        public int BasketId { get; set; }
 
-        public int IdProduct { get; set; }
+        public int ProductId { get; set; }
 
         public double Quantity { get; set; }
 

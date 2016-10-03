@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Pisa.Utils.Reflection;
 
 namespace Pisa.VirtualStore.Models
 {
@@ -32,7 +33,7 @@ namespace Pisa.VirtualStore.Models
         }
 
         private void RegisterNamespaceClasses(string nameSpace) {
-            IEnumerable<Type> types = this.GetType().Assembly.GetTypes().Where(t => String.Equals(t.Namespace, nameSpace, StringComparison.Ordinal) && !t.IsEnum);
+            IEnumerable<Type> types = TypeUtils.GetTypesFromNamespace(this.GetType().Assembly, nameSpace);
             foreach (Type t in types)
                 RegisterModel(t);
         }

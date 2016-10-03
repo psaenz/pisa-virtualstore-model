@@ -6,21 +6,21 @@ namespace Pisa.VirtualStore.Models.Security
     using Pisa.VirtualStore.Models.Base;
     public partial class SecurityUser : BaseAuditableModel
     {
-        public int IdSecurityPerson { get; set; }
+        public int SecurityPersonId { get; set; }
 
-        public int IdGeneralStatus { get; set; }
+        public int GeneralStatusId { get; set; }
 
-        public int IdLastAccountUsed { get; set; }
+        public Nullable<int> LastAccountUsedId { get; set; }
 
-        public string User { get; set; }
+        public string Login { get; set; }
 
         public string Password { get; set; }
 
         public bool MustChangeThePassword { get; set; }
 
-        public virtual GeneralStatus GeneralStatus { get; set; }
-
         public virtual SecurityPerson SecurityPerson { get; set; }
+
+        public virtual GeneralStatus GeneralStatus { get; set; }
 
         /// <summary>
         /// When a user is invited by an Store to register, and later it user is removed we need

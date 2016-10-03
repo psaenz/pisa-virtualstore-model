@@ -8,13 +8,13 @@ namespace Pisa.VirtualStore.Models.Order
 
     public partial class OrderSchedule : BaseAuditableModel
     {
-        public int IdSecurityUser { get; set; }
+        public int SecurityUserId { get; set; }
 
-        public int IdOrder { get; set; }
+        public int OrderId { get; set; }
 
-        public int IdGeneralSchedule { get; set; }
+        public int GeneralScheduleId { get; set; }
 
-        public int IdGeneralStatus { get; set; }
+        public int GeneralStatusId { get; set; }
 
         public virtual SecurityUser SecurityUser { get; set; }
 

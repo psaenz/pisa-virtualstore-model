@@ -14,17 +14,17 @@ namespace Pisa.VirtualStore.Models.Order
 
     public partial class Order : BaseAuditableModel
     {
-        public int IdRequestedByUser { get; set; }
+        public int RequestedByUserId { get; set; }
 
-        public int IdClientBasket { get; set; }
+        public int ClientBasketId { get; set; }
 
-        public int IdGeneralStatus { get; set; }
+        public int GeneralStatusId { get; set; }
 
-        public int IdServiceType { get; set; }
+        public int ServiceTypeId { get; set; }
 
-        public int IdSecurityAccountAddress { get; set; }
+        public int SecurityAccountAddressId { get; set; }
 
-        public int IdStore { get; set; }
+        public int StoreId { get; set; }
 
         public double Amount { get; set; }
 

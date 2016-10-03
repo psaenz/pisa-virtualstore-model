@@ -13,17 +13,16 @@ namespace Pisa.VirtualStore.Models.Store
     {
         public string Name { get; set; }
 
-        public int IdStoreParent { get; set; }
+        public Nullable<int> StoreParentId { get; set; }
 
-        public int IdGeneralStatus { get; set; }
+        public int GeneralStatusId { get; set; }
 
-        public int IdGeneralMediaLogo { get; set; }
+        public int? GeneralMediaLogoId { get; set; }
 
         public virtual Store StoreParent { get; set; }
 
         public virtual GeneralStatus GeneralStatus { get; set; }
 
         public virtual GeneralMedia GeneralMediaLogo { get; set; }
-        
     }
 }
