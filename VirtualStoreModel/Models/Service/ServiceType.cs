@@ -10,8 +10,7 @@ namespace Pisa.VirtualStore.Models.Service
 
     public partial class ServiceType : BaseModel
     {
+        public string Name { get; set; }
         public string Description { get; set; }
-
-        public string ShortDescription { get; set; }
     }
 }

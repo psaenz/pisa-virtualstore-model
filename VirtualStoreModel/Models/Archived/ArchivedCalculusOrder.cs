@@ -14,8 +14,8 @@ namespace Pisa.VirtualStore.Models.Archived
 
         public DateTime CalculusDate { get; set; }
 
-        public virtual Store Store { get; set; }
+        public virtual StoreInfo Store { get; set; }
 
-        public virtual Order Order { get; set; }
+        public virtual OrderInfo Order { get; set; }
     }
 }

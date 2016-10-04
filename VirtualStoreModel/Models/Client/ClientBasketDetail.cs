@@ -15,7 +15,7 @@ namespace Pisa.VirtualStore.Models.Client
 
         public string MoreDetails { get; set; }
 
-        public virtual Product Product { get; set; }
+        public virtual ProductInfo Product { get; set; }
 
         public virtual ClientBasket Basket { get; set; }
     }

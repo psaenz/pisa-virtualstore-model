@@ -23,7 +23,7 @@ namespace Pisa.VirtualStore.Models.Security
         public virtual GeneralStatus GeneralStatus { get; set; }
 
         /// <summary>
-        /// When a user is invited by an Store to register, and later it user is removed we need
+        /// When a user is invited by an StoreInfo to register, and later it user is removed we need
         /// to tell the user from which account he was removed and let them create a new Account
         /// </summary>
         public virtual SecurityAccount LastAccountUsed { get; set; }

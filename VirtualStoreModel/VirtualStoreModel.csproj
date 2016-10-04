@@ -69,12 +69,12 @@
     <Compile Include="Models\General\GeneralSchedule.cs" />
     <Compile Include="Models\General\GeneralStatus.cs" />
     <Compile Include="Models\ModelRegistry.cs" />
-    <Compile Include="Models\Offer\Offer.cs" />
+    <Compile Include="Models\Offer\OfferInfo.cs" />
     <Compile Include="Models\Offer\OffersDetail.cs" />
-    <Compile Include="Models\Order\Order.cs" />
+    <Compile Include="Models\Order\OrderInfo.cs" />
     <Compile Include="Models\Order\OrderSchedule.cs" />
     <Compile Include="Models\Order\OrderScheduleControl.cs" />
-    <Compile Include="Models\Product\Product.cs" />
+    <Compile Include="Models\Product\ProductInfo.cs" />
     <Compile Include="Models\Product\ProductBrand.cs" />
     <Compile Include="Models\Product\ProductType.cs" />
     <Compile Include="Models\Product\ProductUnitOfMeasure.cs" />
@@ -95,7 +95,7 @@
     <Compile Include="Models\Service\ServiceRule.cs" />
     <Compile Include="Models\Service\ServiceType.cs" />
     <Compile Include="Models\Service\ServiceZone.cs" />
-    <Compile Include="Models\Store\Store.cs" />
+    <Compile Include="Models\Store\StoreInfo.cs" />
     <Compile Include="Models\Store\StoreAddress.cs" />
     <Compile Include="Models\Store\StoreContact.cs" />
     <Compile Include="Models\Store\StoreProduct.cs" />

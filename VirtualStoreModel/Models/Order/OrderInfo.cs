@@ -12,7 +12,7 @@ namespace Pisa.VirtualStore.Models.Order
     using Pisa.VirtualStore.Models.Store;
     using Pisa.VirtualStore.Models.Security;
 
-    public partial class Order : BaseAuditableModel
+    public partial class OrderInfo : BaseAuditableModel
     {
         public int RequestedByUserId { get; set; }
 
@@ -44,6 +44,6 @@ namespace Pisa.VirtualStore.Models.Order
 
         public virtual SecurityAccountAddress SecurityAccountAddress { get; set; }
 
-        public virtual Store Store { get; set; }
+        public virtual StoreInfo Store { get; set; }
     }
 }

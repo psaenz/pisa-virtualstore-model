@@ -18,7 +18,7 @@ namespace Pisa.VirtualStore.Models.Order
 
         public virtual SecurityUser SecurityUser { get; set; }
 
-        public virtual Order Order { get; set; }
+        public virtual OrderInfo Order { get; set; }
 
         public virtual GeneralSchedule GeneralSchedule { get; set; }
 

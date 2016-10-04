@@ -15,8 +15,8 @@ namespace Pisa.VirtualStore.Models.Store
 
         public double Price { get; set; }
 
-        public virtual Product Product { get; set; }
+        public virtual ProductInfo Product { get; set; }
 
-        public virtual Store Store { get; set; }
+        public virtual StoreInfo Store { get; set; }
     }
 }

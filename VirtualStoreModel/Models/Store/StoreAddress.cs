@@ -13,6 +13,6 @@ namespace Pisa.VirtualStore.Models.Store
 
         public virtual ContactAddress ContactAddress { get; set; }
 
-        public virtual Store Store { get; set; }
+        public virtual StoreInfo Store { get; set; }
     }
 }

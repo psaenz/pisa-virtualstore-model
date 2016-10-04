@@ -15,6 +15,6 @@ namespace Pisa.VirtualStore.Models.Archived
 
         public virtual ArchivedCalculusOrder ArchivedCalculusOrder { get; set; }
 
-        public virtual Product Product { get; set; }
+        public virtual ProductInfo Product { get; set; }
     }
 }

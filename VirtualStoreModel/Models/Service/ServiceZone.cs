@@ -11,6 +11,6 @@ namespace Pisa.VirtualStore.Models.Service
 
         public string Name { get; set; }
 
-        public virtual Store Store { get; set; }
+        public virtual StoreInfo Store { get; set; }
     }
 }

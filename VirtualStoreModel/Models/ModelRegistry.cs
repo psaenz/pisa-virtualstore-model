@@ -24,12 +24,12 @@ namespace Pisa.VirtualStore.Models
             RegisterNamespaceClasses(typeof(Models.Client.ClientBasket).Namespace);
             RegisterNamespaceClasses(typeof(Models.Contact.Contact).Namespace);
             RegisterNamespaceClasses(typeof(Models.General.GeneralMedia).Namespace);
-            RegisterNamespaceClasses(typeof(Models.Offer.Offer).Namespace);
-            RegisterNamespaceClasses(typeof(Models.Order.Order).Namespace);
-            RegisterNamespaceClasses(typeof(Models.Product.Product).Namespace);
+            RegisterNamespaceClasses(typeof(Models.Offer.OfferInfo).Namespace);
+            RegisterNamespaceClasses(typeof(Models.Order.OrderInfo).Namespace);
+            RegisterNamespaceClasses(typeof(Models.Product.ProductInfo).Namespace);
             RegisterNamespaceClasses(typeof(Models.Security.SecurityAccount).Namespace);
             RegisterNamespaceClasses(typeof(Models.Service.ServiceByStore).Namespace);
-            RegisterNamespaceClasses(typeof(Models.Store.Store).Namespace);
+            RegisterNamespaceClasses(typeof(Models.Store.StoreInfo).Namespace);
         }
 
         private void RegisterNamespaceClasses(string nameSpace) {

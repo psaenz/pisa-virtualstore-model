@@ -15,6 +15,6 @@ namespace Pisa.VirtualStore.Models.Calculus
 
         public virtual CalculusOrder CalculusOrder { get; set; }
 
-        public virtual Offer Offer { get; set; }
+        public virtual OfferInfo Offer { get; set; }
     }
 }

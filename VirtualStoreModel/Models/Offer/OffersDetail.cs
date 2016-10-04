@@ -15,8 +15,8 @@ namespace Pisa.VirtualStore.Models.Offer
 
         public double Price { get; set; }
 
-        public virtual Offer Offer { get; set; }
+        public virtual OfferInfo Offer { get; set; }
 
-        public virtual Product Product { get; set; }
+        public virtual ProductInfo Product { get; set; }
     }
 }

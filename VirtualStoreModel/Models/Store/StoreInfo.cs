@@ -9,7 +9,7 @@ namespace Pisa.VirtualStore.Models.Store
     using Pisa.VirtualStore.Models.Order;
     using Pisa.VirtualStore.Models.General;
 
-    public partial class Store : BaseAuditableModel
+    public partial class StoreInfo : BaseAuditableModel
     {
         public string Name { get; set; }
 
@@ -19,7 +19,7 @@ namespace Pisa.VirtualStore.Models.Store
 
         public int? GeneralMediaLogoId { get; set; }
 
-        public virtual Store StoreParent { get; set; }
+        public virtual StoreInfo StoreParent { get; set; }
 
         public virtual GeneralStatus GeneralStatus { get; set; }
 

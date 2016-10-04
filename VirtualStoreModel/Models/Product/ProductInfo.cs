@@ -5,7 +5,7 @@ namespace Pisa.VirtualStore.Models.Product
     using Pisa.VirtualStore.Models.General;
     using Pisa.VirtualStore.Models.Base;
 
-    public partial class Product : BaseAuditableModel
+    public partial class ProductInfo : BaseAuditableModel
     {
         public string Name { get; set; }
 
@@ -15,7 +15,7 @@ namespace Pisa.VirtualStore.Models.Product
 
         public int ProductUnitOfMeasureId { get; set; }
 
-        public int GeneralMediaId { get; set; }
+        public Nullable<int> GeneralMediaId { get; set; }
 
         public virtual ProductBrand ProductBrand { get; set; }
 

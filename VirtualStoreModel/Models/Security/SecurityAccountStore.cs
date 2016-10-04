@@ -17,7 +17,7 @@ namespace Pisa.VirtualStore.Models.Security
 
     /// <summary>
     /// Links an <see cref="SecurityAccount"/> with and <see cref="Store"/>
-    /// We could have a property in the Store that points to an SecurityAccount...
+    /// We could have a property in the StoreInfo that points to an SecurityAccount...
     /// but I dont want to have security stuff in non-security related classes
     /// </summary>
     public partial class SecurityAccountStore : BaseAuditableModel
@@ -28,6 +28,6 @@ namespace Pisa.VirtualStore.Models.Security
 
         public virtual SecurityAccount SecurityAccount { get; set; }
 
-        public virtual Store Store { get; set; }
+        public virtual StoreInfo Store { get; set; }
     }
 }

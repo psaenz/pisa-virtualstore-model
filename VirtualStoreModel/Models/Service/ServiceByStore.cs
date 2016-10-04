@@ -23,7 +23,7 @@ namespace Pisa.VirtualStore.Models.Service
 
         public int GeneralStatusId { get; set; }
 
-        public virtual Store Store { get; set; }
+        public virtual StoreInfo Store { get; set; }
 
         public virtual ServiceType ServiceType { get; set; }
 

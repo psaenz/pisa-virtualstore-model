@@ -8,21 +8,21 @@ namespace Pisa.VirtualStore.Models.Offer
     using Pisa.VirtualStore.Models.Archived;
     using Pisa.VirtualStore.Models.Calculus;
 
-    public partial class Offer : BaseAuditableModel
+    public partial class OfferInfo : BaseAuditableModel
     {
         public int StoreId { get; set; }
 
         public int GeneralStatusId { get; set; }
 
-        public int GeneralMediaId { get; set; }
+        public Nullable<int> GeneralMediaId { get; set; }
 
-        public int GeneralScheduleId { get; set; }
+        public Nullable<int> GeneralScheduleId { get; set; }
 
         public string Name { get; set; }
 
         public int MaximumPerOrder { get; set; }
 
-        public virtual Store Store { get; set; }
+        public virtual StoreInfo Store { get; set; }
 
         public virtual GeneralStatus GeneralStatus { get; set; }
 

@@ -22,6 +22,6 @@ namespace Pisa.VirtualStore.Models.Client
 
         public virtual SecurityUser SecurityUser { get; set; }
 
-        public virtual Store Store { get; set; }
+        public virtual StoreInfo Store { get; set; }
     }
 }
