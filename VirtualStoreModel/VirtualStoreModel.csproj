@@ -65,6 +65,7 @@
     <Compile Include="Models\Contact\ContactAddress.cs" />
     <Compile Include="Models\Contact\ContactRegion.cs" />
     <Compile Include="Models\Contact\ContactType.cs" />
+    <Compile Include="Models\General\GeneralMediaType.cs" />
     <Compile Include="Models\General\GeneralMedia.cs" />
     <Compile Include="Models\General\GeneralSchedule.cs" />
     <Compile Include="Models\General\GeneralStatus.cs" />

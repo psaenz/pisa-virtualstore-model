@@ -10,10 +10,10 @@ namespace Pisa.VirtualStore.Models.General
 
         public string MediaReference { get; set; }
 
-        public string MediaType { get; set; }
+        public GeneralMediaType MediaType { get; set; }
 
-        public float Height { get; set; }
+        public Nullable<double> Height { get; set; }
 
-        public float Width { get; set; }
+        public Nullable<double> Width { get; set; }
     }
 }

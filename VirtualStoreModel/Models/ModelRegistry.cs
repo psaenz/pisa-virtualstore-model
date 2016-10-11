@@ -22,7 +22,7 @@ namespace Pisa.VirtualStore.Models
             RegisterNamespaceClasses(typeof(Models.Audit.AuditAuthor).Namespace);
             RegisterNamespaceClasses(typeof(Models.Calculus.CalculusAppliedOffer).Namespace);
             RegisterNamespaceClasses(typeof(Models.Client.ClientBasket).Namespace);
-            RegisterNamespaceClasses(typeof(Models.Contact.Contact).Namespace);
+            RegisterNamespaceClasses(typeof(Models.Contact.ContactInfo).Namespace);
             RegisterNamespaceClasses(typeof(Models.General.GeneralMedia).Namespace);
             RegisterNamespaceClasses(typeof(Models.Offer.OfferInfo).Namespace);
             RegisterNamespaceClasses(typeof(Models.Order.OrderInfo).Namespace);

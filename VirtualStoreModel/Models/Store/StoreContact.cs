@@ -11,7 +11,7 @@ namespace Pisa.VirtualStore.Models.Store
 
         public int StoreId { get; set; }
 
-        public virtual Contact Contact { get; set; }
+        public virtual ContactInfo Contact { get; set; }
 
         public virtual StoreInfo Store { get; set; }
     }

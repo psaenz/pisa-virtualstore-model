@@ -21,7 +21,7 @@ namespace Pisa.VirtualStore.Models.Security
 
         public int SecurityAccountId { get; set; }
 
-        public virtual Contact Contact { get; set; }
+        public virtual ContactInfo Contact { get; set; }
 
         public virtual SecurityAccount SecurityAccount { get; set; }
     }
